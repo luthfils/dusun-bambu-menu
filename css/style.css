@@ -1,0 +1,621 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+@font-face {
+    font-family: "colonna-mt";
+    src: url('../fonts/colonna-mt.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+.background-index{
+	background: url('../img/login-background.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+}
+.background-menu{
+	background: url('../img/background-menu.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+}
+.logo {
+	margin:50% auto 25px;
+	text-align: center;
+}
+.logo img{
+	width:100%;
+}
+.pane, .view {
+    background-color: transparent;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+/*------------ index -------------*/
+.button.button-positive {
+    background-color: #8CB93D;
+    border-color: transparent;
+    color: #000;
+	box-shadow: 3px 4px 8px #000000;
+	text-transform: uppercase;
+}
+.button.button-positive:hover{
+    background-color: #b2de64;
+	color: #000;
+}
+.button.button-positive.active {
+    background-color: #b2de64;
+    border-color: transparent;
+	color: #000;
+	box-shadow: 3px 4px 8px #000000;
+}
+.button.button-assertive {
+  background-color: #ef4e3a;
+  border-color: transparent;
+  color: #000;
+  box-shadow: 3px 4px 8px #000000;
+  text-transform: uppercase;
+}
+.button.button-assertive.active {
+      border-color: transparent;
+      background-color: #cc2311;
+      box-shadow: 3px 4px 8px #000000;
+}
+    
+.btn-login {
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*------------ menu -------------*/
+.bar.bar-positive {
+    background-color: rgba(255, 255, 254, 0.5);
+    background-image: linear-gradient(0deg, #145fd7, #145fd7 50%, transparent 50%);
+    border-color: transparent;
+    color: #fff;
+	height: 150px;
+	padding: 30px;
+}
+.has-header {
+    top: 0px;
+}
+.page-2 .bar.bar-positive img{
+	width:100%;
+}
+.page-2 .list-menu img {
+	width:100%;
+}
+.page-2 .scroll {
+	padding-top: 145px;
+	padding-bottom: 40px;
+}
+/*------------ list menu -------------*/
+.page-3 .scroll {
+	padding-top: 145px;
+	padding-bottom: 40px;
+}
+.page-3 .menu-logo img {
+	width:100%;
+}
+.page-3 .bar.bar-positive {
+    background-color: rgba(255, 255, 254, 0.5);
+    background-image: linear-gradient(0deg, #145fd7, #145fd7 50%, transparent 50%);
+    border-color: transparent;
+    color: #fff;
+    height: 150px;
+    padding: 0;
+}
+.page-3 .icon-list img {
+	width:80%;
+}
+.page-3 .icon-list .button {
+	background: none;
+	border: none;
+}
+.page-3 .icon-list .button .active {
+	background: none;
+	border-color: none;
+	opacity:0.5;
+}
+.bar-positive .button.active {
+    border-color: none;
+    background-color: none;
+	opacity:0.8;
+    box-shadow: 0px 0px 0px #000000; 
+}
+.page-3  .bar-positive .button.active {
+    border-color: none;
+    background-color: none;
+	opacity:0.8;
+    box-shadow: 3px 4px 8px #000000; 
+}
+.page-3 .row-button {
+	margin-top: -20px;
+}
+.page-3 .row-button-1 {
+	margin-top: -5px;
+}
+.paddingR0{
+	padding-right:0;
+}
+.padding0{
+	padding:0;
+}
+.page-3 .card, .list-inset {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin: 20px 10px;
+    overflow: hidden;
+}
+.page-3  .card {
+    box-shadow: 10px 14px 13px rgba(0, 0, 0, 0.7);
+    padding-bottom: 0;
+    padding-top: 0;
+	margin-bottom: 40px;
+}
+.page-3 .list-menu-picture img{
+	margin-bottom: -10px;
+    width: 100%;
+}
+.page-3 .box {
+	border-bottom: 2px solid #6b6e4f;
+	padding: 15px;
+	height: 185px;
+}
+.page-3 h1{
+	font-size: 26px;
+	color:#6b6e4f;
+}
+.page-3 .level-icon img{
+	margin-right:15px;
+	width: 20%;
+}
+.page-3 .level-icon {
+	margin-bottom:20px;
+}
+.paddingL15{
+	padding-left:15px;
+}
+.paddingR15{
+	padding-right:15px;
+}
+.page-3 h2{
+	float: right;
+	margin-top: 15px;
+	font-size: 24px;
+}
+.page-3 .call-waiter {
+      bottom: 50%;
+	  position: fixed;
+	  width: 90px;
+}
+.page-3 .cart-number {
+	text-align: center;
+	font-size: 28px;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+.page-3 .btn-add-cart {
+	border-color: transparent;
+	  border-radius: 50%;
+	  width: 40px;
+	  height: 40px;
+	  min-width: 0;
+	  min-height: 0;
+}
+.page-3  .plus {
+	background-color: #30fd00;
+}
+.page-3  .minus {
+	background-color: #fd0018;
+}
+.page-3 .button .icon:before, 
+.page-3 .button.icon:before, 
+.page-3 .button.icon-left:before, 
+.page-3 .button.icon-right:before {
+  display: inline-block;
+  padding: 0 0 1px 0;
+  vertical-align: inherit;
+  font-size: 18px;
+  line-height: 34px;
+} 
+.page-3 .btn-minus{
+	text-align: left;
+}
+.page-3 .btn-plus{
+	text-align: right;
+}
+.page-3 .row-add-cart {
+	  margin-top: 30px;
+}
+/*------------ thumbnail menu -------------*/
+.page-4 .scroll {
+	padding-top: 145px;
+	padding-bottom: 40px;
+}
+.page-4 .menu-logo img {
+	width:100%;
+}
+.page-4 .bar.bar-positive {
+    background-color: rgba(255, 255, 254, 0.5);
+    background-image: linear-gradient(0deg, #145fd7, #145fd7 50%, transparent 50%);
+    border-color: transparent;
+    color: #fff;
+    height: 150px;
+    padding: 0;
+}
+.page-4 .icon-list img {
+	width:80%;
+}
+.page-4 .icon-list .button {
+	background: none;
+	border: none;
+}
+.icon-list .button.active {
+	background: none;
+	border-color: none;
+	opacity:0.5;
+	box-shadow: 0px 0px 0px #000000!important;
+}
+.page-4 .row-button {
+	margin-top: -20px;
+}
+.page-4 .row-button-1 {
+	margin-top: -5px;
+}
+.page-4 .card, .list-inset {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin: 20px 10px;
+    overflow: hidden;
+}
+.page-4  .card {
+    box-shadow: 10px 14px 13px rgba(0, 0, 0, 0.7);
+    padding-bottom: 0;
+    padding-top: 0;
+	margin-bottom: 40px;
+}
+.page-4 .list-menu-picture img{
+	margin-bottom: -10px;
+    width: 100%;
+}
+.page-4 h1{
+	font-size: 26px;
+	color:#6b6e4f;
+}
+.page-4 .level-icon img{
+	margin-right:15px;
+}
+.page-4 .level-icon {
+	margin-bottom:20px;
+}
+.page-4 h2{
+	float: right;
+	margin-top: 15px;
+	font-size: 30px;
+}
+.page-4 h1 {
+  font-size: 38px;
+  color: #6b6e4f;
+  margin-top: 15px;
+}
+.page-4 .box {
+  
+  padding: 15px;
+  height: auto;
+}
+.page-4 p {
+	font-size: 24px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: justify;
+	  height: 75px;
+  overflow: auto;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.page-4 .call-waiter {
+      bottom: 50%;
+	  position: fixed;
+	  width: 90px;
+}
+.page-4 .order-button {
+	border-top: 2px solid #6b6e4f;
+}
+.page-4  .bar-positive .button.active {
+    border-color: none;
+    background-color: none;
+	opacity:0.8;
+    box-shadow: 3px 4px 8px #000000; 
+}
+
+/*------------ my order -------------*/
+.page-5 .scroll {
+	padding-top: 145px;
+	padding-bottom: 40px;
+}
+.page-5 h3{
+	font-size: 86px;
+	text-align: center;
+	font-family: colonna-mt;
+	color: #274103;
+	text-shadow: 3px 3px 15px #000;
+	margin-top: 31px;
+}
+.page-5 .item {
+	border-color: #ddd;
+	background-color: #e6e6e6;
+	color: #444;
+	position: relative;
+	z-index: 2;
+	display: block;
+	margin: -1px;
+	padding: 15px;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 16px;
+}
+.page-5 h2{
+	text-align: center;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+.page-5 .card, .list-inset {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin: 20px 10px;
+    overflow: hidden;
+}
+.page-5  .card {
+    box-shadow: 10px 14px 13px rgba(0, 0, 0, 0.7);
+	margin-bottom: 40px;
+	padding: 15px;
+}
+.page-5 .order-food-img img{
+	width:100%;
+}
+.page-5 .row-order-list{
+	border-bottom: 2px solid #6b6e4f;
+	padding: 0;
+	padding-bottom: 15px;
+	margin-top: 20px;
+}
+.page-5 h1{
+	font-size: 26px;
+	color:#6b6e4f;
+	margin: 0;
+}
+.page-5 .order-name{
+	height:105px;
+	margin-bottom: 10px;
+}
+.page-5 .refresh-btn,
+.page-5 .order-btn{
+	width: 70%;
+	float: right;
+}
+.page-5 .billing-btn{
+	width: 70%;
+}
+.page-5 .cart-number {
+	text-align: center;
+	font-size: 28px;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+.page-5 .btn-add-cart {
+	border-color: transparent;
+	  border-radius: 50%;
+	  width: 40px;
+	  height: 40px;
+	  min-width: 0;
+	  min-height: 0;
+}
+.page-5  .plus {
+	background-color: #30fd00;
+}
+.page-5  .minus {
+	background-color: #fd0018;
+}
+.page-5 .button .icon:before, 
+.page-5 .button.icon:before, 
+.page-5 .button.icon-left:before, 
+.page-5 .button.icon-right:before {
+  display: inline-block;
+  padding: 0 0 1px 0;
+  vertical-align: inherit;
+  font-size: 18px;
+  line-height: 34px;
+} 
+.page-5 .btn-minus{
+	text-align: left;
+}
+.page-5 .btn-plus{
+	text-align: right;
+}
+.page-5 .row-add-cart {
+	  margin-bottom: 20px;
+}
+.page-5 .btn-group-order {
+	margin-top: 15px;
+}
+/*------------ billing -------------*/
+.page-6 .scroll {
+	padding-top: 145px;
+	padding-bottom: 40px;
+}
+.page-6 .card{
+	background:url(../img/order-popup-bg.png);
+	height: 775px;
+	border-radius: 15px;
+	 background-size: cover;
+}
+.page-6 h1 {
+	font-size: 86px;
+	font-family: colonna-mt;
+	text-align: center;
+	margin-top: 31px;
+	color: #274103;
+	text-shadow: 3px 3px 15px #000;
+}
+.page-6 .box{
+	background-color: rgba(255,255,255,0.8);
+	height: 530px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 15px;
+	padding: 15px;
+	color: #274103;
+}
+.page-6 .btn-ok {
+	width: 20%;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.page-6 h2 {
+	font-size: 52px;
+	font-family: colonna-mt;
+	text-align: center;
+	color: #274103;
+	text-shadow: 3px 3px 15px #000;
+}
+.page-6 h3 {
+	font-size: 22px;
+	  font-weight: bold;
+}
+.page-6 p {
+	font-size: 24px;
+	font-family: colonna-mt;
+}
+.page-6 .row-product {
+	border-bottom: 1px solid #274103;
+	margin-bottom: 10px;
+	height: 160px;
+	overflow: auto;
+}
+.page-6 .row-product .row-product-list .price {
+	text-align:right;
+}
+.page-6 .row-subtotal {
+	border-bottom: 1px solid #274103;
+	margin-bottom: 10px;
+}
+.page-6 .row-subtotal .price p{
+	text-align:right;
+}
+.page-6 .row-grandtotal .price p{
+	text-align:right;
+}
+/*------------ confirm -------------*/
+.page-7 .scroll {
+	padding-top: 145px;
+	padding-bottom: 40px;
+}
+.page-7 .card{
+	background:url(../img/order-popup-bg.png);
+	height: 775px;
+	border-radius: 15px;
+	background-size: cover;
+}
+.page-7 h1 {
+	font-size: 86px;
+	font-family: colonna-mt;
+	text-align: center;
+	margin-top: 31px;
+	color: #274103;
+	text-shadow: 3px 3px 15px #000;
+}
+.page-7 .box{
+	background-color: rgba(255,255,255,0.8);
+	height: 330px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-radius: 15px;
+	padding: 15px;
+	color: #274103;
+}
+.page-7 .btn-ok {
+	width: 20%;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.page-7 h2 {
+	  font-size: 28px;
+	  text-align: center;
+	  color: #000;
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  margin-bottom: 35px;
+	  font-weight: bold;
+}
+.page-7 h2.warning {
+	  color: #ce3739;
+}
+.page-7 h3 {
+	font-size: 26px;
+	font-weight: bold;
+}
+.page-7 p {
+	font-size: 26px;
+	font-family: colonna-mt;
+}
+.page-7 .row-product {
+	margin-bottom: 10px;
+	height: 230px;
+	overflow: auto;
+}
+.page-7 .btn-cancel {
+	width: 40%;
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.page-7 .btn-confirm {
+	width: 40%;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+/*-------- footer --------*/
+
+.bar.bar-calm {
+    background-color: rgba(255, 255, 254, 0.5);
+    background-image: linear-gradient(0deg, #0a9ec7, #0a9ec7 50%, transparent 50%);
+    border: 1px solid transparent;
+    color: #fff;
+}
+.bar.bar-calm  img {
+	height: 25px;
+	margin-left: auto;
+	margin-top: 8px;
+}
+ 
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.logo {
+		margin: 15% auto 25px;
+		text-align: center;
+	}
+	.page-2 .bar.bar-positive {
+		height: 200px;
+	}
+	.page-2 .scroll {
+		padding-top: 200px;
+	}
+	.page-3 .bar.bar-positive {
+		height: 200px;
+	}
+	.page-3 .scroll {
+		padding-top: 200px;
+	}
+}

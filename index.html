@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+    <html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Ionic Template</title>
+
+    <link href="css/ionic.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="js/ionic.bundle.js"></script>
+	<script src="js/script.js"></script>
+
+
+  </head>
+  <body>
+
+
+    
+    <ion-nav-view class="slide-left-right"></ion-nav-view>
+	
+<!-- ---------------- page 1 index --------------------- -->
+
+    <script id="page1.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view hide-back-button="true" class="background-index">
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+          <a class="button button-block button-positive btn-login" ui-sref="page2">Login</a>
+        </ion-content>
+      </ion-view>
+    </script>    
+
+<!-- ---------------- page 2 menu --------------------- -->
+    
+	<script id="page2.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view class="page-2 background-menu">
+		<ion-nav-bar class="bar bar-header bar-positive">
+			<img src="img/header.png">
+		</ion-nav-bar> 
+	
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="row list-menu">
+				<div class="col col-10"></div>
+				<div class="col col-40">
+					<a ui-sref="page3"><img src="img/menu.png"></a>
+				</div>
+				<div class="col col-40">
+					<a ui-sref="page3"><img src="img/order-list.png"></a>
+				</div>
+				<div class="col col-10"></div>
+			</div>
+			<div class="row list-menu">
+				<div class="col col-10"></div>
+				<div class="col col-40">
+					<a ui-sref="page3"><img src="img/take-photo.png"></a>
+				</div>
+				<div class="col col-40">
+					<a ui-sref="page3"><img src="img/call-waiter.png"></a>
+				</div>
+				<div class="col col-10"></div>
+			</div>
+			<div class="row list-menu">
+				<div class="col col-10"></div>
+				<div class="col col-40">
+					<a ui-sref="page3"><img src="img/about.png"></a>
+				</div>
+				<div class="col col-40">
+				</div>
+				<div class="col col-10"></div>
+			</div>
+        </ion-content>
+      </ion-view>
+    </script> 
+<!-- ---------------- page 3 list menu --------------------- -->
+    <script id="page3.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view class="page-3 background-menu">
+		<ion-nav-bar class="bar bar-header bar-positive">
+			<div class="row list-menu ">
+				<div class="col col-34">
+					<div class="row list-menu menu-logo">
+						<div class="col">
+							<img src="img/menu-logo.png">
+						</div>
+					</div>
+					<div class="row row-button">
+						<div class="col col-50 ">
+							<button class="button button-block button-positive">
+								Food
+							</button>
+						</div>
+						<div class="col col-50 ">
+							<button class="button button-block button-positive">
+								Drink
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col col-66" style="text-align: right;">
+					<div class="row icon-list paddingR0">
+						<div class="col paddingR0">
+							<a ui-sref="page2" class="button button-icon icon"><img src="img/button-back.png"></a>
+						</div>
+					</div>
+					<div class="row icon-list row-button-1 paddingR0">
+						<div class="col col-40 ">
+						</div>	
+						<div class="col col-20 ">
+							<a ui-sref="page5" class="button"><img src="img/button-cart.png"></a>
+						</div>
+						<div class="col col-20 ">
+							<a ui-sref="page3" class="button"><img src="img/button-list.png"></a>
+						</div>
+						<div class="col col-20 ">
+							<a ui-sref="page4" class="button"><img src="img/button-thumbnail.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</ion-nav-bar> 
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="card">
+				<div class="row padding0">
+					<div class="col col-50 list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+					<div class="col col-50 padding0">
+						<div class="box">
+							<h1>Chicken Burger</h1>
+							<div class="row padding0">
+								<div class="col padding0">
+									<div class="row level-icon">
+										<img src="img/koki.png">
+										<img src="img/like.png">
+									</div>
+									<div class="row level-icon">
+										<img src="img/chili.png">
+									</div>
+								</div>
+								<div class="col">
+									<div class="row padding0 row-add-cart">
+										<div class="col padding0 btn-minus">
+											<button class="button icon ion-minus btn-add-cart minus"></button>
+										</div>
+										<div class="col cart-number">
+											<span>1</span>
+										</div>
+										<div class="col padding0 btn-plus">
+											<button class="button icon ion-plus btn-add-cart plus"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row padding0">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive" >
+									Order
+								</button>
+							</div>
+							<div class="col col-66 paddingR15">
+								<h2>RP. 25.000,-</h2>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="row padding0">
+					<div class="col col-50 list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+					<div class="col col-50 padding0">
+						<div class="box">
+							<h1>Chicken Burger</h1>
+							<div class="row padding0">
+								<div class="col padding0">
+									<div class="row level-icon">
+										<img src="img/like.png">
+									</div>
+									<div class="row level-icon">
+										<img src="img/chili.png">
+										<img src="img/chili.png">
+										<img src="img/chili.png">
+									</div>
+								</div>
+								<div class="col">
+									<div class="row padding0 row-add-cart">
+										<div class="col padding0 btn-minus">
+											<button class="button icon ion-minus btn-add-cart minus"></button>
+										</div>
+										<div class="col cart-number">
+											<span>1</span>
+										</div>
+										<div class="col padding0 btn-plus">
+											<button class="button icon ion-plus btn-add-cart plus"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row padding0">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive">
+									Order
+								</button>
+							</div>
+							<div class="col col-66 paddingR15">
+								<h2>RP. 25.000,-</h2>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="row padding0">
+					<div class="col col-50 list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+					<div class="col col-50 padding0">
+						<div class="box">
+							<h1>Chicken Burger</h1>
+							<div class="row padding0">
+								<div class="col padding0">
+									<div class="row level-icon">
+										<img src="img/koki.png">
+									</div>
+									<div class="row level-icon">
+
+									</div>
+								</div>
+								<div class="col">
+									<div class="row padding0 row-add-cart">
+										<div class="col padding0 btn-minus">
+											<button class="button icon ion-minus btn-add-cart minus"></button>
+										</div>
+										<div class="col cart-number">
+											<span>1</span>
+										</div>
+										<div class="col padding0 btn-plus">
+											<button class="button icon ion-plus btn-add-cart plus"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row padding0">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive">
+									Order
+								</button>
+							</div>
+							<div class="col col-66 paddingR15">
+								<h2>RP. 25.000,-</h2>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="row padding0">
+					<div class="col col-50 list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+					<div class="col col-50 padding0">
+						<div class="box">
+							<h1>Chicken Burger</h1>
+							<div class="row padding0">
+								<div class="col padding0">
+									<div class="row level-icon">
+										<img src="img/koki.png">
+									</div>
+									<div class="row level-icon">
+
+									</div>
+								</div>
+								<div class="col">
+									<div class="row padding0 row-add-cart">
+										<div class="col padding0 btn-minus">
+											<button class="button icon ion-minus btn-add-cart minus"></button>
+										</div>
+										<div class="col cart-number">
+											<span>1</span>
+										</div>
+										<div class="col padding0 btn-plus">
+											<button class="button icon ion-plus btn-add-cart plus"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row padding0">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive">
+									Order
+								</button>
+							</div>
+							<div class="col col-66 paddingR15">
+								<h2>RP. 25.000,-</h2>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</ion-content>
+		<button class="button button-block button-positive call-waiter">
+			Call Waiter
+		</button>
+	  </ion-view>
+    </script> 
+
+<!-- ---------------- page 4 thumbnail menu --------------------- -->
+    <script id="page4.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view class="page-4 background-menu">
+		<ion-nav-bar class="bar bar-header bar-positive">
+			<div class="row list-menu ">
+				<div class="col col-34">
+					<div class="row list-menu menu-logo">
+						<div class="col">
+							<img src="img/menu-logo.png">
+						</div>
+					</div>
+					<div class="row row-button">
+						<div class="col col-50 ">
+							<button class="button button-block button-positive">
+								Food
+							</button>
+						</div>
+						<div class="col col-50 ">
+							<button class="button button-block button-positive">
+								Drink
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col col-66" style="text-align: right;">
+					<div class="row icon-list paddingR0">
+						<div class="col paddingR0">
+							<a ui-sref="page3" class="button button-icon icon"><img src="img/button-back.png"></a>
+						</div>
+					</div>
+					<div class="row icon-list row-button-1 paddingR0">
+						<div class="col col-40 ">
+						</div>	
+						<div class="col col-20 ">
+							<a ui-sref="page5" class="button"><img src="img/button-cart.png"></a>
+						</div>
+						<div class="col col-20 ">
+							<a ui-sref="page3" class="button"><img src="img/button-list.png"></a>
+						</div>
+						<div class="col col-20 ">
+							<a ui-sref="page4" class="button"><img src="img/button-thumbnail.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</ion-nav-bar> 
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="card">
+				<div class="row padding0">
+					<div class="col list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+				</div>
+				<div class="row padding0">
+					<div class="box">
+						<h1>Chicken Burger</h1>
+						<div class="row">
+							<p>Lorem ipsum dolor sit amet, doming mediocritatem sea ea, nam alia iusto civibus ad. In clita insolens incorrupte duo. Id nam virtute ponderum argumentum, vix et aeque interesset dissentiunt. Pro wisi putent virtute te. Ex stet viris delicata sea, ex deserunt forensibus voluptatum ius, no mel intellegam scribentur.</p>
+						</div>	
+						<div class="row order-button">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive">
+									Order
+								</button>
+							</div>	
+							<div class="col col-66 paddingR15">
+								<h2>Rp. 25.000,-</h2>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="card">
+				<div class="row padding0">
+					<div class="col list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+				</div>
+				<div class="row padding0">
+					<div class="box">
+						<h1>Chicken Burger</h1>
+						<div class="row">
+							<p>Lorem ipsum dolor sit amet, doming mediocritatem sea ea, nam alia iusto civibus ad. In clita insolens incorrupte duo. Id nam virtute ponderum argumentum, vix et aeque interesset dissentiunt. Pro wisi putent virtute te. Ex stet viris delicata sea, ex deserunt forensibus voluptatum ius, no mel intellegam scribentur.</p>
+						</div>	
+						<div class="row order-button">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive">
+									Order
+								</button>
+							</div>	
+							<div class="col col-66 paddingR15">
+								<h2>Rp. 25.000,-</h2>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="card">
+				<div class="row padding0">
+					<div class="col list-menu-picture padding0">
+						<img src="img/food.png">
+					</div>
+				</div>
+				<div class="row padding0">
+					<div class="box">
+						<h1>Chicken Burger</h1>
+						<div class="row">
+							<p>Lorem ipsum dolor sit amet, doming mediocritatem sea ea, nam alia iusto civibus ad. In clita insolens incorrupte duo. Id nam virtute ponderum argumentum, vix et aeque interesset dissentiunt. Pro wisi putent virtute te. Ex stet viris delicata sea, ex deserunt forensibus voluptatum ius, no mel intellegam scribentur.</p>
+						</div>	
+						<div class="row order-button">
+							<div class="col col-34 paddingL15">
+								<button class="button button-block button-positive">
+									Order
+								</button>
+							</div>	
+							<div class="col col-66 paddingR15">
+								<h2>Rp. 25.000,-</h2>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			
+		</ion-content>
+		<button class="button button-block button-positive call-waiter">
+			Call Waiter
+		</button>
+	  </ion-view>
+    </script>
+
+
+<!-- ---------------- page 5 list menu --------------------- -->
+    <script id="page5.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view class="page-5 background-menu">
+		<ion-nav-bar class="bar bar-header bar-positive">
+			<div class="row list-menu ">
+				<div class="col col-50">
+					<img src="img/my-order.png">
+				</div>
+				<div class="col col-50" style="text-align: right;">
+					<a ui-sref="page3" class="button button-icon icon"><img src="img/button-back.png"></a>
+				</div>
+			</div>
+			
+		</ion-nav-bar> 
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="card">
+						<h3>Table 16</h3>
+					<div class="row">
+						<div class="col">
+							<h2>item</h2>
+						</div>
+						<div class="col col-40">
+							
+						</div>
+						<div class="col">
+							<h2>total</h2>
+						</div>
+					</div>
+					<div class="row row-order-list">
+						<div class="col order-food-img padding0">
+							<img src="img/order-food.png">
+						</div>
+						<div class="col col-40 paddingL15">
+							<div class="row padding0 order-name">
+								<h1>Chicken Burger</h1>
+							</div>
+							<div class="row">
+								<h1>Rp. 25.000,-</h1>
+							</div>
+						</div>
+						<div class="col">
+							<div class="row row-add-cart">
+								<div class="col  btn-minus">
+									<button class="button icon ion-minus btn-add-cart minus"></button>
+								</div>
+								<div class="col cart-number">
+									<span>1</span>
+								</div>
+								<div class="col  btn-plus">
+									<button class="button icon ion-plus btn-add-cart plus"></button>									</div>
+							</div>
+							<div class="row">
+								<button class="button button-block button-assertive">
+								Cancel
+								</button>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="row row-order-list">
+						<div class="col order-food-img padding0">
+							<img src="img/order-food.png">
+						</div>
+						<div class="col col-40 paddingL15">
+							<div class="row padding0 order-name">
+								<h1>Chicken Burger</h1>
+							</div>
+							<div class="row">
+								<h1>Rp. 25.000,-</h1>
+							</div>
+						</div>
+						<div class="col">
+							<div class="row row-add-cart">
+								<div class="col  btn-minus">
+									<button class="button icon ion-minus btn-add-cart minus"></button>
+								</div>
+								<div class="col cart-number">
+									<span>1</span>
+								</div>
+								<div class="col  btn-plus">
+									<button class="button icon ion-plus btn-add-cart plus"></button>									</div>
+							</div>
+							<div class="row">
+								<button class="button button-block button-assertive">
+								Cancel
+								</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row row-order-list">
+						<div class="col order-food-img padding0">
+							<img src="img/order-food.png">
+						</div>
+						<div class="col col-40 paddingL15">
+							<div class="row padding0 order-name">
+								<h1>Chicken Burger</h1>
+							</div>
+							<div class="row">
+								<h1>Rp. 25.000,-</h1>
+							</div>
+						</div>
+						<div class="col">
+							<div class="row row-add-cart">
+								<div class="col  btn-minus">
+									<button class="button icon ion-minus btn-add-cart minus"></button>
+								</div>
+								<div class="col cart-number">
+									<span>1</span>
+								</div>
+								<div class="col  btn-plus">
+									<button class="button icon ion-plus btn-add-cart plus"></button>									</div>
+							</div>
+							<div class="row">
+								<button class="button button-block button-assertive">
+								Cancel
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="row row-order-list">
+						<div class="col order-food-img padding0">
+							<img src="img/order-food.png">
+						</div>
+						<div class="col col-40 paddingL15">
+							<div class="row padding0 order-name">
+								<h1>Chicken Burger</h1>
+							</div>
+							<div class="row">
+								<h1>Rp. 25.000,-</h1>
+							</div>
+						</div>
+						<div class="col">
+							<div class="row row-add-cart">
+								<div class="col  btn-minus">
+									<button class="button icon ion-minus btn-add-cart minus"></button>
+								</div>
+								<div class="col cart-number">
+									<span>1</span>
+								</div>
+								<div class="col  btn-plus">
+									<button class="button icon ion-plus btn-add-cart plus"></button>									</div>
+							</div>
+							<div class="row">
+								<button class="button button-block button-assertive">
+								Cancel
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="row btn-group-order">
+						<div class="col">
+							<button class="button button-block button-positive refresh-btn">
+								Refresh
+							</button>
+						</div>
+						<div class="col col-40 ">
+							<button ui-sref="page6" class="button button-block button-positive billing-btn">
+								Billing
+							</button>
+						</div>
+						<div class="col">
+							<button ui-sref="page7" class="button button-block button-positive order-btn">
+								Order
+							</button>
+						</div>
+					</div>
+			</div>
+			
+			
+		</ion-content>
+	  </ion-view>
+    </script>
+
+<!-- ---------------- page 6 billing --------------------- -->
+    <script id="page6.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view class="page-6 background-menu">
+		<ion-nav-bar class="bar bar-header bar-positive">
+			<div class="row list-menu ">
+				<div class="col col-50">
+					<img src="img/my-order.png">
+				</div>
+				<div class="col col-50" style="text-align: right;">
+					<a ui-sref="page3" class="button button-icon icon"><img src="img/button-back.png"></a>
+				</div>
+			</div>
+			
+		</ion-nav-bar> 
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="card">
+				<h1>Pembayaran</h1>
+				<div class="box">
+					<h2>Table 16</h2>
+					<div class="row row-main">
+						<div class="col">
+							<div class="row row-title">
+								<div class="col col-50">
+									<h3>Nama Item</h3>
+								</div>
+								<div class="col">
+									<h3>Qty</h3>
+								</div>
+								<div class="col col-20">
+									<h3 style="text-align: center;">Price</h3>
+								</div>
+								<div class="col col-20">
+									<h3 style="text-align: center;">Total</h3>
+								</div>
+							</div>
+							<div class="row row-product padding0">
+								<div class="col padding0">
+									<div class="row row-product-list">
+										<div class="col col-50">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col">
+											<p>1</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col col-50">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col">
+											<p>1</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col col-50">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col">
+											<p>1</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col col-50">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col">
+											<p>1</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col col-50">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col">
+											<p>1</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col col-50">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col">
+											<p>1</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+										<div class="col col-20">
+											<p class="price">24.000</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row row-subtotal padding0">
+								<div class="col col-33">
+								</div>
+								<div class="col col-33 ket">
+									<div class="row">
+										<div class="col">
+											<p>Subtotal</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p>Service</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p>Tax</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col-10 rp padding0">
+									<div class="row">
+										<div class="col">
+											<p>Rp</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p>Rp</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p>Rp</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col price paddingR0">
+									<div class="row">
+										<div class="col">
+											<p>50.000.000</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p>50.000.000</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col">
+											<p>50.000.000</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row row-grandtotal padding0">
+								<div class="col col-33">
+								</div>
+								<div class="col col-33 ket">
+									<div class="row">
+										<div class="col">
+											<p>Grang Total</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col-10 rp padding0">
+									<div class="row">
+										<div class="col">
+											<p>Rp</p>
+										</div>
+									</div>
+								</div>
+								<div class="col col price paddingR0">
+									<div class="row">
+										<div class="col">
+											<p>50.000.000</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="button button-block button-positive btn-ok">
+					Ok
+				</button>
+			</div>
+			
+		</ion-content>
+	  </ion-view>
+    </script>
+
+<!-- ---------------- page 7 confirm --------------------- -->
+    <script id="page7.html" type="text/ng-template">
+      <!-- The title of the ion-view will be shown on the navbar -->
+      <ion-view class="page-7 background-menu">
+		<ion-nav-bar class="bar bar-header bar-positive">
+			<div class="row list-menu ">
+				<div class="col col-50">
+					<img src="img/my-order.png">
+				</div>
+				<div class="col col-50" style="text-align: right;">
+					<a ui-sref="page3" class="button button-icon icon"><img src="img/button-back.png"></a>
+				</div>
+			</div>
+			
+		</ion-nav-bar> 
+        <ion-content class="padding">
+          <!-- The content of the page -->
+			<div class="card">
+				<h1>Konfirmasi</h1>
+				<h2>Apakah Anda ingin mengkonfirmasi pesanan Anda ?</h2>
+				<h2 class="warning">Pesan yang telah dikonfirmasi tidak dapat dibatalkan</h2>
+				<div class="box">
+					
+					<div class="row row-main">
+						<div class="col">
+							<div class="row row-title">
+								<div class="col">
+									<h3>Nama Item</h3>
+								</div>
+								<div class="col col-20">
+									<h3>Qty</h3>
+								</div>
+							</div>
+							<div class="row row-product padding0">
+								<div class="col padding0">
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+									<div class="row row-product-list">
+										<div class="col">
+											<p>Chicken Burger Blackpper</p>
+										</div>
+										<div class="col col-20">
+											<p>1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<button class="button button-block button-assertive btn-cancel">
+							Cancel
+						</button>
+					</div>
+					<div class="col">
+						<button class="button button-block button-positive btn-confirm">
+							Confirm
+						</button>
+					</div>
+				</div>
+			</div>
+			
+		</ion-content>
+	  </ion-view>
+    </script>	
+	<script id="popup-template.html" type="text/ng-template">
+	<ion-content>
+	  <ion-view>
+		<input ng-model="data.wifi" type="text" placeholder="Password">
+	  </ion-view>
+	   </ion-content>
+      
+    </script>
+	<ion-footer>
+		<div class="bar bar-footer bar-calm">
+			<img src="img/copyright.png">
+		</div>
+	</ion-footer>
+
+	
+  </body>
+</html>
+    
+    
+    
+
+   
